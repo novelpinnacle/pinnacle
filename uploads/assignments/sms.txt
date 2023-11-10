@@ -1,0 +1,2 @@
+SMS-SHOOT-ID/pinacl5e60aee12ece9   success
+ERR: NO VALID CONTACT SUPPLIED  failed

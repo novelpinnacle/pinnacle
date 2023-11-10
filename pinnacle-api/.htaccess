@@ -1,0 +1,15 @@
+Header set Access-Control-Allow-Origin "*"
+RewriteEngine On
+RewriteRule ^login/([0-9]+)/([0-9]+)/$ RestController.php?service=Login&username=$1&password=$2 [nc,qsa]
+RewriteRule ^profile/([0-9]+)/$ RestController.php?service=Profile&id=$1 [nc,qsa]
+RewriteRule ^noticeboards/([0-9]+)/$ RestController.php?service=Noticeboards&id=$1 [nc,qsa]
+RewriteRule ^exams/([0-9]+)/$ RestController.php?service=Exams&id=$1 [nc,qsa]
+RewriteRule ^assignments/([0-9]+)/$ RestController.php?service=Assignments&id=$1 [nc,qsa]
+RewriteRule ^videolectures/([0-9]+)/$ RestController.php?service=VideoLectures&id=$1 [nc,qsa]
+RewriteRule ^timetable/([0-9]+)/([0-9a-bA-B_-]+)/$ RestController.php?service=Timetable&id=$1&date=$2 [nc,qsa]
+RewriteRule ^timetabledata/([0-9]+)/([0-9a-bA-B_-]+)/$ RestController.php?service=TimetableData&id=$1&date=$2 [nc,qsa]
+RewriteRule ^sms/([0-9]+)/$ RestController.php?service=SMS&id=$1 [nc,qsa]
+RewriteRule ^attendance/([0-9]+)/([0-9a-bA-B_-]+)/$ RestController.php?service=Attendance&id=$1&date=$2 [nc,qsa]
+RewriteRule ^attendancedata/([0-9]+)/([0-9a-bA-B_-]+)/$ RestController.php?service=AttendanceData&id=$1&date=$2 [nc,qsa]
+RewriteRule ^homework/([0-9]+)/$ RestController.php?service=Homework&id=$1 [nc,qsa]
+RewriteRule ^videolectures/$ RestController.php?service=VideoLectures [nc,qsa]
